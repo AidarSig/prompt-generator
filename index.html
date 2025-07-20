@@ -485,7 +485,8 @@ function generatePrompt() {
     { role: "Поэт", thinking: "Сократический метод" },
     { role: "Терминал Linux", thinking: "Мозговой штурм" },
     { role: "Поэт", depth: "Глубина PhD" },
-    { role: "Терминал Linux", depth: "Глубина PhD" }
+    { role: "Терминал Linux", depth: "Глубина PhD" },
+    { role: "Инженер-программист", format: "Как сказка (для детских объяснений)" }
   ];
 
   for (const rule of incompatibleCombos) {
@@ -506,7 +507,6 @@ function generatePrompt() {
     default: [
       `Войди в роль {roleG}.`,
       `Представь, что ты — {roleN}.`,
-      `Поставь себя на место {roleN}.`,
       `Ты теперь {roleN}.`,
       `Примерь на себя роль {roleG}.`,
       `Ты работаешь как {roleN}.`,
